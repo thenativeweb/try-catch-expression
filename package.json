@@ -1,0 +1,35 @@
+{
+  "name": "try-catch-expression",
+  "version": "0.0.0",
+  "description": "a try-catch-finally construct in an inlinable expression.",
+  "contributors": [
+    {
+      "name": "Golo Roden",
+      "email": "golo.roden@thenativeweb.io"
+    },
+    {
+      "name": "Hannes Leutloff",
+      "email": "hannes.leutloff@thenativeweb.io"
+    }
+  ],
+  "main": "build/lib/index.js",
+  "types": "build/lib/index.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "assertthat": "5.1.1",
+    "roboter": "11.1.24",
+    "semantic-release-configuration": "1.0.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenativeweb/try-catch-expression.git"
+  },
+  "keywords": [
+    "try",
+    "catch",
+    "finally",
+    "error",
+    "exception"
+  ],
+  "license": "MIT"
+}
