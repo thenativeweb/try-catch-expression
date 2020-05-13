@@ -1,6 +1,6 @@
 {
   "name": "try-catch-expression",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "try-catch-expression provides try..catch as expression.",
   "contributors": [
     {
