@@ -1,6 +1,6 @@
 # try-catch-expression
 
-a try-catch-finally construct in an inlinable expression.
+try-catch-expression provides try..catch as expression.
 
 ## Status
 
@@ -58,7 +58,7 @@ There are also `tryCatchFinally` and `tryFinally` available:
 ```javascript
 const result = tryCatchFinally(
   () => readFromFileHandle(),
-  error => return 'default-value',
+  ex => return 'default-value',
   () => closeFileHandle()
 );
 

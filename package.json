@@ -1,7 +1,7 @@
 {
   "name": "try-catch-expression",
   "version": "0.0.0",
-  "description": "a try-catch-finally construct in an inlinable expression.",
+  "description": "try-catch-expression provides try..catch as expression.",
   "contributors": [
     {
       "name": "Golo Roden",
