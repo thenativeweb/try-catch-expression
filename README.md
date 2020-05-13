@@ -48,9 +48,9 @@ const result = tryCatch(
 );
 ```
 
-The variable `result` will then either contain the return value of the first
+The variable `result` will then either contain the return value of the try
 function, in case it succeeds, or alternatively the default value returned from
-the second function. Any error thrown in the error handler will be passed
+the catch function. Any error thrown in the catch function will be passed
 through to the enclosing scope.
 
 There are also `tryCatchFinally` and `tryFinally` available:
