@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/thenativeweb/try-catch-expression/compare/1.0.0...1.0.1) (2020-05-14)
+
+
+### Bug Fixes
+
+* Improve documentation. ([#2](https://github.com/thenativeweb/try-catch-expression/issues/2)) ([d6daaed](https://github.com/thenativeweb/try-catch-expression/commit/d6daaed773f78610aef89747ac47b7b0aca47fd5))
+
 # 1.0.0 (2020-05-13)
 
 
