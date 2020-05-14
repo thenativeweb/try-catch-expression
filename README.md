@@ -18,6 +18,36 @@ try-catch-expression provides try..catch as expression.
 $ npm install try-catch-expression
 ```
 
+## Rationale
+
+For handling errors, JavaScript and TypeScript provide the `try` / `catch` statement. While it is highly useful, it sometimes makes your code hard to read, e.g. if you want to assign a variable and have a fallback in the `catch` clause:
+
+```javascript
+let result;
+
+try {
+  result = getValue();
+} catch {
+  result = getDefaultValue();
+}
+
+console.log(result);
+```
+
+For this (and other) scenarios it would be helpful it `try` / `catch` was also available as an expression, so that you could write your code in a more convenient way:
+
+```javascript
+const result = try {
+  return getValue();
+} catch {
+  return getDefaultValue();
+}
+
+console.log(result);
+```
+
+Unfortunately, neither JavaScript nor TypeScript support this. That's what this module adds.
+
 ## Quick start
 
 First you need to add a reference to try-catch-expression in your application:
@@ -32,44 +62,49 @@ If you use TypeScript, use the following code instead:
 import { tryCatch, tryFinally, tryCatchFinally } from 'try-catch-expression';
 ```
 
-To use a simple try/catch, use `tryCatch` and pass a potentially failing
-function as well as an error handler:
+To use a simple `try` / `catch`, use the `tryCatch` function and pass a potentially failing function as well as a function that acts as a catch clause. In that function, you may return a value that is then also returned by the surrounding `tryCatch` function, or re-throw.
 
 ```javascript
 const result = tryCatch(
-  () => potentiallyFailingOperation(),
+  () => {
+    // Try something...
+  },
   ex => {
-    if (ex.code === 'EKNOWNERROR') {
-      return 'default-value';
-    }
-
-    throw ex;
+    // Return a default value or re-throw the exception.
   }
 );
 ```
 
-The variable `result` will then either contain the return value of the try
-function, in case it succeeds, or alternatively the default value returned from
-the catch function. Any error thrown in the catch function will be passed
-through to the enclosing scope.
+This means that the variable `result` will then either contain the return value of the `try` function, in case it succeeds. If it fails, the value from the `catch` function is returned. Any error thrown in the catch function will be passed through to the enclosing scope.
 
-There are also `tryCatchFinally` and `tryFinally` available:
+### Using finally
+
+Besides `tryCatch`, there are also `tryCatchFinally` and `tryFinally` available:
 
 ```javascript
 const result = tryCatchFinally(
-  () => readFromFileHandle(),
-  ex => return 'default-value',
-  () => closeFileHandle()
+  () => {
+    // Try something...
+  },
+  ex => {
+    // Return a default value or re-throw the exception.
+  },
+  () => {
+    // Clean up.
+  }
 );
 
 const result = tryFinally(
-  () => potentiallyFailingOperation(),
-  () => necessaryCleanUp()
+  () => {
+    // Try something...
+  },
+  () => {
+    // Clean up.
+  }
 );
 ```
 
-Note that the return value of the finally function will be discarded, to avoid
-[confusing behavior](https://eslint.org/docs/rules/no-unsafe-finally).
+Note that the return value of the finally function will be discarded, to avoid [confusing behavior](https://eslint.org/docs/rules/no-unsafe-finally).
 
 ## Running the build
 
