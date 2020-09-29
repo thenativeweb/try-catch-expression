@@ -1,13 +1,13 @@
 const tryCatchFinally = function <TTryResult, TCatchResult> (
   tryFunction: () => TTryResult,
-  catchFunction: (ex: Error) => TCatchResult,
+  catchFunction: (ex: unknown) => TCatchResult,
   finallyFunction: () => void
 ): TTryResult | TCatchResult {
   let result;
 
   try {
     result = tryFunction();
-  } catch (ex) {
+  } catch (ex: unknown) {
     result = catchFunction(ex);
   } finally {
     finallyFunction();
