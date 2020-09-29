@@ -44,7 +44,7 @@ suite('tryCatch', (): void => {
       (): never => {
         throw error;
       },
-      (ex: Error): void => {
+      (ex: unknown): void => {
         assert.that(ex).is.equalTo(error);
       }
     );

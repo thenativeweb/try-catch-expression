@@ -1,10 +1,10 @@
 const tryCatch = function<TTryResult, TCatchResult> (
   tryFunction: () => TTryResult,
-  catchFunction: (ex: Error) => TCatchResult
+  catchFunction: (ex: unknown) => TCatchResult
 ): TTryResult | TCatchResult {
   try {
     return tryFunction();
-  } catch (ex) {
+  } catch (ex: unknown) {
     return catchFunction(ex);
   }
 };
