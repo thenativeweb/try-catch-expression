@@ -106,7 +106,7 @@ const result = tryFinally(
 
 Note that the return value of the finally function will be discarded, to avoid [confusing behavior](https://eslint.org/docs/rules/no-unsafe-finally).
 
-## Running the build
+## Running the quality assurance
 
 To build this module use [roboter](https://www.npmjs.com/package/roboter):
 
