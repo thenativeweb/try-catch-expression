@@ -9,7 +9,7 @@ try-catch-expression provides try..catch as expression.
 | Version          | [![npm](https://img.shields.io/npm/v/try-catch-expression)](https://www.npmjs.com/package/try-catch-expression)                 |
 | Dependencies     | ![David](https://img.shields.io/david/thenativeweb/try-catch-expression)                                          |
 | Dev dependencies | ![David](https://img.shields.io/david/dev/thenativeweb/try-catch-expression)                                      |
-| Build            | ![GitHub Actions](https://github.com/thenativeweb/try-catch-expression/workflows/Release/badge.svg?branch=master) |
+| Build            | ![GitHub Actions](https://github.com/thenativeweb/try-catch-expression/workflows/Release/badge.svg?branch=main) |
 | License          | ![GitHub](https://img.shields.io/github/license/thenativeweb/try-catch-expression)                                |
 
 ## Installation
