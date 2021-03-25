@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/thenativeweb/try-catch-expression/compare/1.0.2...1.0.3) (2021-03-25)
+
+
+### Bug Fixes
+
+* Migrate from master to main. ([#140](https://github.com/thenativeweb/try-catch-expression/issues/140)) ([513a804](https://github.com/thenativeweb/try-catch-expression/commit/513a804e261ba97bb1dad57eb24bdce1a3541a6c))
+
 ## [1.0.2](https://github.com/thenativeweb/try-catch-expression/compare/1.0.1...1.0.2) (2020-11-03)
 
 
