@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/thenativeweb/try-catch-expression/compare/1.0.3...1.0.4) (2021-05-12)
+
+
+### Bug Fixes
+
+* bump hosted-git-info from 2.8.8 to 2.8.9 ([#156](https://github.com/thenativeweb/try-catch-expression/issues/156)) ([fde2100](https://github.com/thenativeweb/try-catch-expression/commit/fde2100505a9519b32cd97674828f7ff3e7cadfb))
+
 ## [1.0.3](https://github.com/thenativeweb/try-catch-expression/compare/1.0.2...1.0.3) (2021-03-25)
 
 
