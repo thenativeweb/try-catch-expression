@@ -16,7 +16,7 @@
   "types": "build/lib/index.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "assertthat": "6.2.0",
+    "assertthat": "6.3.0",
     "roboter": "11.7.1",
     "semantic-release-configuration": "2.0.1"
   },
