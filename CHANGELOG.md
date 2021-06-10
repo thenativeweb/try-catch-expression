@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/thenativeweb/try-catch-expression/compare/1.0.5...1.0.6) (2021-06-10)
+
+
+### Bug Fixes
+
+* bump glob-parent from 5.1.1 to 5.1.2 ([#169](https://github.com/thenativeweb/try-catch-expression/issues/169)) ([5900c6b](https://github.com/thenativeweb/try-catch-expression/commit/5900c6b84adf426e2b6d4f10bd22cd98f5d4b686))
+
 ## [1.0.5](https://github.com/thenativeweb/try-catch-expression/compare/1.0.4...1.0.5) (2021-06-10)
 
 
