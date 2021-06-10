@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/thenativeweb/try-catch-expression/compare/1.0.4...1.0.5) (2021-06-10)
+
+
+### Bug Fixes
+
+* bump trim-newlines from 3.0.0 to 3.0.1 ([#168](https://github.com/thenativeweb/try-catch-expression/issues/168)) ([4161813](https://github.com/thenativeweb/try-catch-expression/commit/4161813e7b0a652fc8a708a08ee249f633b5f4b5))
+
 ## [1.0.4](https://github.com/thenativeweb/try-catch-expression/compare/1.0.3...1.0.4) (2021-05-12)
 
 
