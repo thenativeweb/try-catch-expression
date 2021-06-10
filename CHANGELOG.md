@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/thenativeweb/try-catch-expression/compare/1.0.6...1.0.7) (2021-06-10)
+
+
+### Bug Fixes
+
+* bump normalize-url from 6.0.0 to 6.0.1 ([#167](https://github.com/thenativeweb/try-catch-expression/issues/167)) ([dfabed9](https://github.com/thenativeweb/try-catch-expression/commit/dfabed96236698743286d7d63621526f5ff74219))
+
 ## [1.0.6](https://github.com/thenativeweb/try-catch-expression/compare/1.0.5...1.0.6) (2021-06-10)
 
 
