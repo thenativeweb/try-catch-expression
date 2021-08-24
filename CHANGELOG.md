@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/thenativeweb/try-catch-expression/compare/1.0.7...1.0.8) (2021-08-15)
+
+
+### Bug Fixes
+
+* bump path-parse from 1.0.6 to 1.0.7 ([#182](https://github.com/thenativeweb/try-catch-expression/issues/182)) ([a02ca99](https://github.com/thenativeweb/try-catch-expression/commit/a02ca99264f644856395b689dce9503e8ecc63c9))
+
 ## [1.0.7](https://github.com/thenativeweb/try-catch-expression/compare/1.0.6...1.0.7) (2021-06-10)
 
 
